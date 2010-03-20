@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=YWL9T
 Tags: flash, banner, image, message, ticker 
 Requires at least: 2.5 or higher
 Tested up to: 2.9.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 
 Create a flash ticker like message on your WordPress site.
 
@@ -20,7 +20,7 @@ This section describes how to install the plugin and get it working.
 1. Upload the `eticker` folder to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Place `[itk-eticker]your message[/itk-eticker]` on your pages/posts
-1. Or add <?php itk_eticker_show(`your message`); ?> to your theme
+1. Or add <?php echo(itk_eticker_show(`your message`)); ?> to your theme
 
 == Frequently Asked Questions ==
 
@@ -38,3 +38,6 @@ not applicable
 
 = 1.0.0 =
 * First release
+
+= 1.0.1 =
+* Solved issue in IE

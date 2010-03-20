@@ -3,7 +3,7 @@
 Plugin Name: eTicker
 Plugin URI: http://www.itukker.nl/blog/eticker/
 Description: Display a graphical light message ticker on your blog.
-Version: 1.0.0
+Version: 1.0.1
 Author: Tukker
 Author URI: http://www.iTukker.nl
 */
@@ -47,7 +47,7 @@ function itk_eticker_show($content) {
 				<param name="quality" value="high" />
 				<param name="wmode" value="transparent" />
 				<param name="allowScriptAccess" value="sameDomain" />
-				<param NAME="flashvars" value="message=<?php echo($content);?>">
+				<param NAME="flashvars" value="message=' . $content . '">
 				<embed src="' . ITK_ETK_DIRECTORY . '/static/swf/Ticker.swf" 
 					quality="high" wmode="transparent"
 					width="526" height="75" name="Ticker" align="middle"
